@@ -1,0 +1,175 @@
+########################### Ken's Code ###############################
+def Ken_Code():
+
+	print('Ken Code Starts')
+	# Create folder for .png files, if it does not exist
+	Plot_Path = 'PNGFiles'
+	if not os.path.exists(Plot_Path):
+		os.makedirs(Plot_Path)
+
+	SourceFilesFolder = 'SourceFiles'
+
+	# Read Excel Files, skipthe first 3 rows for Contact, Exposure and Proximity files. 
+	contact_file = pd.read_excel(SourceFilesFolder + '/Contact_With_Others.xls',skiprows = [0,1,2])
+	exposure_file = pd.read_excel(SourceFilesFolder + '/Exposure_to_Disease_and_Infection.xls',skiprows = [0,1,2])
+	p_proximity_file = pd.read_excel(SourceFilesFolder + '/Physical_Proximity.xls',skiprows = [0,1,2])
+	occupation_file = pd.read_excel(SourceFilesFolder + '/Occupation Salary Population and  Type.xlsx')
+
+	# Rename 'Occupation' field to 'OCCUPATION' for joining with Occupation file. 
+	contact_file = contact_file.rename(columns={'Occupation': 'OCCUPATION'})
+
+	print('Ken: Create OverallRiskScore_raw dataframe')
+	# Join Contact, Exposure and Proximity data using Code column, 
+	# let us call resulting dataset as 'OverallRiskScore'
+	OverallRiskScore_raw = contact_file.merge(
+		exposure_file[['E_D_I Context', 'Code']], on = 'Code').merge(
+		p_proximity_file[['P_P Context', 'Code']], on = 'Code')
+
+	# Add a new calculated column 'Overall Risk Score' with value = average of context field in all three files. 
+	OverallRiskScore_raw['Overall Risk Score'] = round((
+		OverallRiskScore_raw['C_W_ O Context'] + OverallRiskScore_raw['E_D_I Context'] + OverallRiskScore_raw['P_P Context'])/3, 2)
+
+	# Re-order the column sequence for OverallRiskScore_raw dataset 
+	OverallRiskScore_raw = OverallRiskScore_raw[['Code', 'OCCUPATION' , 'C_W_ O Context','E_D_I Context', 'P_P Context', 'Overall Risk Score' ]]
+
+	# We need only two columns - OCCUPATION & Overall Risk Score, join this dataset with Occupation file. 
+	OverallRiskScore_raw_reqCols = OverallRiskScore_raw[['OCCUPATION', 'Overall Risk Score']]
+
+	print('Ken: Create OverallRiskScore dataframe')
+	# Join OverallRiskScore_raw_reqCols dataset with Occupation File
+	OverallRiskScore = OverallRiskScore_raw_reqCols.merge(occupation_file, on = 'OCCUPATION')
+
+	# Add a new calculated field - PCT_TOT_EMP which is percentage of Total Emp for each with respect to total Employee count. 
+	OverallRiskScore['PCT_TOT_EMP'] = round((OverallRiskScore['TOT_EMP']/OverallRiskScore['TOT_EMP'].sum())*100,2)
+
+	# Some rows have * as mean salary, remove these records
+	OverallRiskScore = OverallRiskScore[OverallRiskScore['MEAN_SALARY'] !='*']
+
+	# Remove $ symbol from Mean Salary using Python Lambda function to consider mean salary as Integer value
+	OverallRiskScore['MEAN_SALARY'] = OverallRiskScore['MEAN_SALARY'].apply(lambda x: str(x).replace('$', '')).astype('int64')
+
+	print('Ken: Print Number of Rows for each dataset we have created')
+	# Print Number of Rows for each dataset we have created
+	print('******************************************************')
+	print('Row Count of Contact File:- ' + str(len(contact_file)))
+	print('Row Count of Exposure File:- ' + str(len(exposure_file)))
+	print('Row Count of Physical Proximity File:- ' + str(len(p_proximity_file)))
+	print('Row Count of Occupation File:- ' + str(len(occupation_file)))
+	print('Row Count of OverallRiskScore_raw dataset:- ' + str(len(OverallRiskScore_raw)))
+	print('Row Count of OverallRiskScore dataset:- ' + str(len(OverallRiskScore)))
+	print('******************************************************')
+
+	# Create folder for output files, if it does not exist
+	Output_Path = 'OutputFiles'
+	if not os.path.exists(Output_Path):
+		os.makedirs(Output_Path)
+
+	print('Ken: Save output files')
+	# Set index = False to avoid exporting index column to csv file        
+	OverallRiskScore_raw.to_csv(Output_Path + '/OverallRiskScore_raw.csv', index=False)
+	OverallRiskScore.to_csv(Output_Path + '/OverallRiskScore.csv', index=False)
+
+	print('Ken: Create Plot1')
+	## Plot of Mean Salary to Overall Risk Score
+	fig=plt.figure()
+	ax=fig.add_axes([0,0,1,1])
+	ax.scatter(OverallRiskScore['MEAN_SALARY'], OverallRiskScore['Overall Risk Score'],edgecolors='b')
+	ax.set_xlabel('MEAN SALARY')
+	ax.set_ylabel('Overall Risk Score')
+	plt.grid(True)
+	plt.title('MEAN SALARY vs. Overall Risk Score')
+	# Save the plot as png file with all axis values and axis labels
+	plt.savefig(Plot_Path + '/MeanSalary_OverallRiskScore.png', dpi=200, bbox_inches='tight')
+
+	print('Ken: Create Plot2')
+	## Plot of Mean Salary to Overall Risk Score
+	fig=plt.figure()
+	ax=fig.add_axes([0,0,1,1])
+	OverallRiskScore_SalH = OverallRiskScore[OverallRiskScore['Health/Non Health']=='Health']
+	OverallRiskScore_SalNH = OverallRiskScore[OverallRiskScore['Health/Non Health']=='Non Health']
+
+	ax.scatter(OverallRiskScore_SalH['MEAN_SALARY'], OverallRiskScore_SalH['Overall Risk Score'],edgecolors='b')
+	ax.scatter(OverallRiskScore_SalNH['MEAN_SALARY'], OverallRiskScore_SalNH['Overall Risk Score'],edgecolors='r')
+	ax.set_xlabel('MEAN SALARY')
+	ax.set_ylabel('Overall Risk Score')
+	plt.legend(['Health', 'Non Health'])
+	plt.grid(True)
+	plt.title('MEAN SALARY vs. Overall Risk Score with Health and Non Health Occupation')
+	# Save the plot as png file with all axis values and axis labels
+	plt.savefig(Plot_Path + '/MeanSalary_OverallRiskScore_WithHealthVsNonHealth.png', dpi=200, bbox_inches='tight')
+	
+	print('Ken: Create Plot3')
+	## Plot of Mean Salary to Overall Risk Score
+	ORS_Cat = pd.read_csv('SourceFiles/OverallRiskScore_withCategory.csv')
+	ORS_Cat.loc[(ORS_Cat['Category'].isnull()), 'Category'] = 'Others'
+	fig=plt.figure()
+	ax=fig.add_axes([0,0,1,1])
+	ORS_Cat_Nurses = ORS_Cat[ORS_Cat['Category']=='Nurses']
+	ORS_Cat_Doctors = ORS_Cat[ORS_Cat['Category']=='Doctors']
+	ORS_Cat_Aides = ORS_Cat[ORS_Cat['Category']=='Aides']
+	ORS_Cat_Others = ORS_Cat[ORS_Cat['Category']=='Others']
+
+	ax.scatter(ORS_Cat_Nurses['MEAN_SALARY'], ORS_Cat_Nurses['Overall Risk Score'],edgecolors='b')
+	ax.scatter(ORS_Cat_Doctors['MEAN_SALARY'], ORS_Cat_Doctors['Overall Risk Score'],edgecolors='r')
+	ax.scatter(ORS_Cat_Aides['MEAN_SALARY'], ORS_Cat_Aides['Overall Risk Score'],edgecolors='g')
+	ax.scatter(ORS_Cat_Others['MEAN_SALARY'], ORS_Cat_Others['Overall Risk Score'],edgecolors='y',marker='^')
+	ax.set_xlabel('MEAN SALARY')
+	ax.set_ylabel('Overall Risk Score')
+
+	plt.grid(True)
+	plt.title('MEAN SALARY vs. Top 20 Overall Risk Score with Category ')
+	plt.legend(['Nurses', 'Doctors', 'Aides', 'Others'])
+	# Save the plot as png file with all axis values and axis labels
+	plt.savefig(Plot_Path + '/MeanSalary_Top20OverallRiskScore_WithCategory.png', dpi=200, bbox_inches='tight')
+
+	print('Ken: Create Plot4')
+	## Plot of Mean Salary to Overall Risk Score
+	ORS_Cat = pd.read_csv('SourceFiles/OverallRiskScore_withCategory.csv')
+	fig=plt.figure()
+	ax=fig.add_axes([0,0,1,1])
+	ORS_Health = ORS_Cat[ORS_Cat['Health/Non Health']=='Health']
+	ORS_NonHealth = ORS_Cat[ORS_Cat['Health/Non Health']=='Non Health']
+
+	ax.scatter(ORS_Health['MEAN_SALARY'], ORS_Health['Overall Risk Score'],edgecolors='r')
+	ax.scatter(ORS_NonHealth['MEAN_SALARY'], ORS_NonHealth['Overall Risk Score'],edgecolors='y',marker='^')
+	ax.set_xlabel('MEAN SALARY')
+	ax.set_ylabel('Overall Risk Score')
+
+	plt.grid(True)
+	plt.title('MEAN SALARY vs. Overall Risk Score Health and Non Health Occupations')
+	plt.legend(['Health', 'Non Health'])
+	# Save the plot as png file with all axis values and axis labels
+	plt.savefig(Plot_Path + '/MeanSalary_Health_NonHealth.png', dpi=200, bbox_inches='tight')
+
+	print('Ken: Create Plot5')
+	## Plot of Total Employees to Overall Risk Score
+	fig=plt.figure()
+	ax=fig.add_axes([0,0,1,1])
+	ax.scatter(OverallRiskScore['TOT_EMP'], OverallRiskScore['Overall Risk Score'],edgecolors='b')
+	ax.set_xlabel('TOT_EMP')
+
+	# To stop matplotlib from showing exponential notation for Tot_Emp
+	ax.ticklabel_format(useOffset=False, style='plain')
+	ax.set_ylabel('Overall Risk Score')
+	plt.grid(True)
+	plt.title('TOT_EMP vs. Overall Risk Score')
+	# Save the plot as png file with all axis values and axis labels
+	plt.savefig(Plot_Path + '/TotEmp_OverallRiskScore.png', dpi=200, bbox_inches='tight')
+
+	print('Ken: Create Plot6')
+	## Plot of Total Employees to Overall Risk Score
+	fig=plt.figure()
+	ax=fig.add_axes([0,0,1,1])
+	ax.scatter(OverallRiskScore['PCT_TOT_EMP'], OverallRiskScore['Overall Risk Score'],edgecolors='b')
+	ax.set_xlabel('PCT_TOT_EMP')
+	ax.set_ylabel('Overall Risk Score')
+	plt.grid(True)
+	plt.title('PCT_TOT_EMP vs. Overall Risk Score')
+	# Save the plot as png file with all axis values and axis labels
+	plt.savefig(Plot_Path + '/PctTotEmp_OverallRiskScore.png', dpi=200, bbox_inches='tight')
+
+	print('Ken Code Ends')
+
+Ken_Code()
+
+#########################################################################

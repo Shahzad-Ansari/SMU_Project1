@@ -1,0 +1,596 @@
+OCCUPATION,Category,Overall Risk Score,TOT_EMP,Health/Non Health,MEAN_SALARY,PCT_TOT_EMP
+Dental Hygienists,Nurses,100,221560,Health,77230,0.2
+Oral and Maxillofacial Surgeons,Doctors,98,4650,Health,237570,0
+Radiation Therapists,Nurses,97.33,17860,Health,91620,0.02
+Dental Assistants,Aides,97.33,351470,Health,41170,0.32
+Orderlies,Aides,97.33,46990,Health,30710,0.04
+Obstetricians and Gynecologists,Doctors,97,18620,Health,233610,0.02
+"Dentists, General",Doctors,96,110730,Health,178260,0.1
+Registered Nurses,Nurses,95.67,2982280,Health,77460,2.71
+Respiratory Therapists,Nurses,95.67,132090,Health,63950,0.12
+Occupational Therapy Aides,Aides,94.67,7560,Health,34310,0.01
+Occupational Therapists,Nurses,94,133570,Health,86210,0.12
+Nurse Midwives,Nurses,93.67,6930,Health,108810,0.01
+Licensed Practical and Licensed Vocational Nurses,Aides,93.67,697510,Health,48500,0.63
+Anesthesiologists,Doctors,93,31010,Health,261730,0.03
+Physician Assistants,Nurses,93,120090,Health,112410,0.11
+Physical Therapist Aides,Aides,93,49270,Health,29180,0.04
+Prosthodontists,Doctors,92.67,490,Health,220840,0
+Diagnostic Medical Sonographers,Nurses,92.67,72790,Health,75780,0.07
+Nurse Anesthetists,Doctors,92,43570,Health,181040,0.04
+Emergency Medical Technicians and Paramedics,Aides,92,260600,Health,38830,0.24
+"Pediatricians, General",,91.67,29740,Health,184410,0.03
+Nuclear Medicine Technologists,,91.67,18110,Health,80240,0.02
+Podiatrists,,91.33,9770,Health,142680,0.01
+Veterinary Assistants and Laboratory Animal Caretakers,,91.33,97030,Health,29690,0.09
+Veterinarians,,91,74540,Health,104820,0.07
+Surgical Technologists,,91,109000,Health,50110,0.1
+Cardiovascular Technologists and Technicians,,90,56110,Health,59600,0.05
+Physical Therapist Assistants,,90,96840,Health,58520,0.09
+Flight Attendants,,90,120840,Non Health,56230,0.11
+Orthodontists,,89.67,5990,Health,230830,0.01
+Psychiatric Technicians,,89.67,78470,Health,37550,0.07
+Physical Therapists,,89,233350,Health,90170,0.21
+Occupational Therapy Assistants,,89,44990,Health,61880,0.04
+Medical Assistants,,89,712430,Health,35720,0.65
+Psychiatric Aides,,88,55020,Health,32590,0.05
+Nursing Assistants,,87.67,1419920,Health,30720,1.29
+Phlebotomists,,86.67,128290,Health,36480,0.12
+Athletic Trainers,,86,28600,Non Health,50540,0.03
+Medical Equipment Preparers,,86,56900,Health,39530,0.05
+Nurse Practitioners,,85.67,200600,Health,111840,0.18
+Orthotists and Prosthetists,,85.67,9830,Health,72810,0.01
+Veterinary Technologists and Technicians,,85.67,110650,Health,36670,0.1
+Optometrists,,85.33,39420,Health,122980,0.04
+Healthcare Social Workers,,85.33,174890,Health,59300,0.16
+Ophthalmic Medical Technicians,,85.33,58600,Health,38760,0.05
+Pharmacy Aides,,85.33,37280,Health,30490,0.03
+Recreational Therapists,,84.67,19070,Health,51130,0.02
+"Ambulance Drivers and Attendants, Except Emergency Medical Technicians",,84.67,14740,Health,29600,0.01
+Correctional Officers and Jailers,,83.67,423050,Non Health,50130,0.38
+Pharmacy Technicians,,83.33,417780,Health,35250,0.38
+Chiropractors,,83,35010,Health,85010,0.03
+Barbers,,83,20030,Non Health,35190,0.02
+Pharmacists,,81.67,311200,Health,125510,0.28
+Magnetic Resonance Imaging Technologists,,81.67,37900,Health,74270,0.03
+First-Line Supervisors of Correctional Officers,,81.67,46430,Non Health,69000,0.04
+"Kindergarten Teachers, Except Special Education",,81.67,124290,Non Health,60210,0.11
+Embalmers,,81.33,3890,Non Health,50100,0
+Exercise Physiologists,,80.67,7280,Health,54750,0.01
+"Special Education Teachers, Preschool",,79.67,22340,Non Health,67060,0.02
+Social and Human Service Assistants,,78.67,404450,Non Health,37050,0.37
+Dietitians and Nutritionists,,78.33,67670,Health,62330,0.06
+"Special Education Teachers, Middle School",,78,85840,Non Health,65740,0.08
+Septic Tank Servicers and Sewer Pipe Cleaners,,77.33,29750,Non Health,42760,0.03
+First-Line Supervisors of Police and Detectives,,77,121340,Non Health,94950,0.11
+"Special Education Teachers, Kindergarten and Elementary School",,76.67,193830,Non Health,64420,0.18
+Transportation Security Screeners,,76.67,46730,Non Health,42310,0.04
+Transit and Railroad Police,,76,4690,Non Health,71120,0
+Audiologists,,75.67,13590,Health,83900,0.01
+Speech-Language Pathologists,,75.67,154360,Health,82000,0.14
+Hearing Aid Specialists,,75.33,8210,Health,55360,0.01
+Animal Control Workers,,75.33,11980,Non Health,39710,0.01
+Psychiatrists,,74.67,25530,Health,220430,0.02
+"Preschool Teachers, Except Special Education",,74.33,431350,Non Health,34650,0.39
+"Middle School Teachers, Except Special and Career/Technical Education",,73.67,622330,Non Health,63550,0.57
+Childcare Workers,,73.67,561520,Non Health,25510,0.51
+"Elementary School Teachers, Except Special Education",,73.33,1430480,Non Health,63930,1.3
+"Hairdressers, Hairstylists, and Cosmetologists",,73.33,385960,Non Health,31530,0.35
+"Nursing Instructors and Teachers, Postsecondary",,73,59680,Health,83160,0.05
+Interpreters and Translators,,73,58870,Non Health,57000,0.05
+Community Health Workers,,73,58950,Health,44390,0.05
+"Opticians, Dispensing",,72.67,72330,Health,40730,0.07
+Dietetic Technicians,,72.67,29230,Health,31180,0.03
+First-Line Supervisors of Food Preparation and Serving Workers,,72.33,1011100,Non Health,36960,0.92
+Skincare Specialists,,72,56660,Health,38970,0.05
+Funeral Attendants,,72,34370,Non Health,29830,0.03
+Microbiologists,,71.67,18270,Health,82760,0.02
+Pipelayers,,71.67,36270,Non Health,43600,0.03
+Bailiffs,,71,19650,Non Health,51840,0.02
+"Bus Drivers, Transit and Intercity",,71,179510,Non Health,45830,0.16
+"Airline Pilots, Copilots, and Flight Engineers",,70,84520,Non Health,174870,0.08
+Couriers and Messengers,,70,74720,Non Health,31640,0.07
+Massage Therapists,,69.67,107240,Non Health,47180,0.1
+Tellers,,69.67,442120,Non Health,31660,0.4
+Forensic Science Technicians,,69.33,16520,Non Health,63170,0.02
+Probation Officers and Correctional Treatment Specialists,,68.67,88120,Non Health,59910,0.08
+"Food Servers, Nonrestaurant",,68.67,277580,Non Health,26080,0.25
+Amusement and Recreation Attendants,,68.67,338110,Non Health,24330,0.31
+Manicurists and Pedicurists,,68.33,111780,Non Health,27390,0.1
+"Special Education Teachers, Secondary School",,68,143170,Non Health,65710,0.13
+Recreation Workers,,68,358750,Non Health,29330,0.33
+"Cooks, Institution and Cafeteria",,68,402480,Non Health,29030,0.37
+Medical Appliance Technicians,,67,14130,Health,44200,0.01
+"Career/Technical Education Teachers, Secondary School",,66.67,74520,Non Health,64800,0.07
+Fish and Game Wardens,,66.33,6800,Non Health,57690,0.01
+Cashiers,,66.33,3617910,Non Health,24400,3.29
+Cashiers,,66.33,3596630,Non Health,24370,3.27
+Shampooers,,66.33,12120,Non Health,22910,0.01
+Commercial Pilots,,66,37830,Non Health,102870,0.03
+"Electrical and Electronics Repairers, Powerhouse, Substation, and Relay",,65.67,22650,Non Health,81280,0.02
+Subway and Streetcar Operators,,65.67,10730,Non Health,63770,0.01
+"Makeup Artists, Theatrical and Performance",,65.33,3400,Non Health,81600,0
+"Maintenance and Repair Workers, General",,65.33,1418990,Non Health,41960,1.29
+"Library Assistants, Clerical",,65.33,85910,Non Health,29820,0.08
+"Ushers, Lobby Attendants, and Ticket Takers",,65,138160,Non Health,24870,0.13
+"Interviewers, Except Eligibility and Loan",,64.67,188570,Non Health,36390,0.17
+Fire Inspectors,,64.33,15870,Non Health,63180,0.01
+Telecommunications Line Installers and Repairers,,64.33,120900,Non Health,59670,0.11
+Reservation and Transportation Ticket Agents and Travel Clerks,,64.33,123660,Non Health,44390,0.11
+"Career/Technical Education Teachers, Middle School",,64,11860,Non Health,64900,0.01
+"Child, Family, and School Social Workers",,64,327710,Non Health,51030,0.3
+"Roof Bolters, Mining",,63.67,3140,Non Health,59560,0
+Dental Laboratory Technicians,,63.67,34460,Health,44330,0.03
+"Helpers--Pipelayers, Plumbers, Pipefitters, and Steamfitters",,63.67,58400,Non Health,33750,0.05
+"Switchboard Operators, Including Answering Service",,63.67,68050,Non Health,33030,0.06
+Millwrights,,63.33,47320,Non Health,57050,0.04
+Clergy,,63.33,53180,Non Health,55190,0.05
+Choreographers,,63.33,4630,Non Health,53590,0
+Dining Room and Cafeteria Attendants and Bartender Helpers,,63.33,477270,Non Health,25020,0.43
+"Hosts and Hostesses, Restaurant, Lounge, and Coffee Shop",,63.33,423380,Non Health,24010,0.38
+Chefs and Head Cooks,,63,128190,Non Health,56310,0.12
+Postal Service Clerks,,63,81170,Non Health,50610,0.07
+Waiters and Waitresses,,63,2579020,Non Health,26800,2.34
+Rail-Track Laying and Maintenance Equipment Operators,,62.67,16180,Non Health,57160,0.01
+Floral Designers,,62,41770,Non Health,29760,0.04
+"Lifeguards, Ski Patrol, and Other Recreational Protective Service Workers",,62,143940,Non Health,25380,0.13
+"Administrative Law Judges, Adjudicators, and Hearing Officers",,61.67,14380,Non Health,100230,0.01
+Food Service Managers,,61.67,235470,Non Health,59820,0.21
+Forest Fire Inspectors and Prevention Specialists,,61.67,2160,Non Health,53350,0
+"Office Clerks, General",,61.67,2956060,Non Health,36360,2.68
+Retail Salespersons,,61.67,4317950,Non Health,29360,3.92
+"Art, Drama, and Music Teachers, Postsecondary",,61.33,94060,Non Health,83220,0.09
+Marriage and Family Therapists,,61.33,59050,Non Health,54590,0.05
+First-Line Supervisors of Housekeeping and Janitorial Workers,,61.33,155550,Non Health,44160,0.14
+"First-Line Supervisors of Mechanics, Installers, and Repairers",,61,485700,Non Health,70550,0.44
+Mental Health and Substance Abuse Social Workers,,61,117770,Health,51670,0.11
+Receptionists and Information Clerks,,61,1057370,Non Health,31250,0.96
+Air Traffic Controllers,,60.67,22090,Non Health,120140,0.02
+Structural Iron and Steel Workers,,60.67,76570,Non Health,59170,0.07
+"Refractory Materials Repairers, Except Brickmasons",,60.67,820,Non Health,55750,0
+"Roustabouts, Oil and Gas",,60.67,58930,Non Health,41280,0.05
+Telemarketers,,60.67,134800,Non Health,29770,0.12
+"Radio, Cellular, and Tower Equipment Installers and Repairers",,60.33,14370,Non Health,57820,0.01
+Photographic Process Workers and Processing Machine Operators,,60.33,11940,Non Health,36890,0.01
+Maids and Housekeeping Cleaners,,60.33,926960,Non Health,26810,0.84
+"Judges, Magistrate Judges, and Magistrates",,60,28670,Non Health,128550,0.03
+"Secondary School Teachers, Except Special and Career/Technical Education",,60,1035850,Non Health,65930,0.94
+Airfield Operations Specialists,,60,10680,Non Health,57620,0.01
+Motorboat Operators,,60,2120,Non Health,49030,0
+"Eligibility Interviewers, Government Programs",,60,139780,Non Health,47110,0.13
+Driver/Sales Workers,,60,444660,Non Health,30230,0.4
+"Farmworkers, Farm, Ranch, and Aquacultural Animals",,60,36630,Non Health,29880,0.03
+Ship Engineers,,59.67,8410,Non Health,79540,0.01
+Telephone Operators,,59.33,4740,Non Health,37940,0
+"Health Specialties Teachers, Postsecondary",,59,201920,Health,121620,0.18
+Commercial Divers,,59,3420,Non Health,67100,0
+Riggers,,59,23000,Non Health,52420,0.02
+Coaches and Scouts,,59,241390,Non Health,44910,0.22
+Forest and Conservation Workers,,59,6760,Non Health,32790,0.01
+Electricians,,58.67,688620,Non Health,60370,0.63
+"Derrick Operators, Oil and Gas",,58.67,12110,Non Health,48030,0.01
+Agricultural Inspectors,,58.67,13760,Non Health,47160,0.01
+Counter and Rental Clerks,,58.67,411560,Non Health,32600,0.37
+Bartenders,,58.67,646850,Non Health,28000,0.59
+Stationary Engineers and Boiler Operators,,58.33,32520,Non Health,65970,0.03
+Aircraft Cargo Handling Supervisors,,58.33,9500,Non Health,57960,0.01
+Highway Maintenance Workers,,58.33,150860,Non Health,42410,0.14
+Home Appliance Repairers,,58.33,31100,Non Health,42400,0.03
+Residential Advisors,,58.33,107930,Non Health,31610,0.1
+Genetic Counselors,,58,2390,Non Health,84310,0
+Real Estate Sales Agents,,58,162330,Non Health,62060,0.15
+Wind Turbine Service Technicians,,58,5960,Non Health,56700,0.01
+Construction Laborers,,58,1020350,Non Health,41730,0.93
+New Accounts Clerks,,58,43420,Non Health,38490,0.04
+Food Cooking Machine Operators and Tenders,,58,30030,Non Health,32320,0.03
+"Telecommunications Equipment Installers and Repairers, Except Line Installers",,57.67,208480,Non Health,58560,0.19
+Sailors and Marine Oilers,,57.67,31290,Non Health,53250,0.03
+Helpers--Carpenters,,57.67,32920,Non Health,33830,0.03
+Baggage Porters and Bellhops,,57.67,39790,Non Health,28230,0.04
+Postmasters and Mail Superintendents,,57.33,13850,Non Health,78220,0.01
+"Control and Valve Installers and Repairers, Except Mechanical Door",,57.33,52270,Non Health,59920,0.05
+"Insulation Workers, Mechanical",,57.33,26670,Non Health,54120,0.02
+Security and Fire Alarm Systems Installers,,57.33,71600,Non Health,50210,0.07
+Glaziers,,57.33,52400,Non Health,49810,0.05
+First-Line Supervisors of Retail Sales Workers,,57.33,1171900,Non Health,45830,1.06
+"Recreation and Fitness Studies Teachers, Postsecondary",,57,15880,Non Health,73720,0.01
+"Rotary Drill Operators, Oil and Gas",,57,21010,Non Health,57070,0.02
+Costume Attendants,,57,7460,Non Health,48970,0.01
+Stonemasons,,57,12390,Non Health,48070,0.01
+Occupational Health and Safety Technicians,,56.67,20580,Non Health,56470,0.02
+Industrial Machinery Mechanics,,56.67,387630,Non Health,55320,0.35
+"Meeting, Convention, and Event Planners",,56.67,117610,Non Health,54880,0.11
+Reinforcing Iron and Rebar Workers,,56.67,18870,Non Health,54650,0.02
+Security Guards,,56.67,1126370,Non Health,33030,1.02
+"Locker Room, Coatroom, and Dressing Room Attendants",,56.67,15990,Non Health,28230,0.01
+"Atmospheric, Earth, Marine, and Space Sciences Teachers, Postsecondary",,56.33,11020,Non Health,102690,0.01
+Computer User Support Specialists,,56.33,647330,Non Health,56550,0.59
+Biological Technicians,,56.33,79530,Health,49110,0.07
+"Floor Layers, Except Carpet, Wood, and Hard Tiles",,56.33,16290,Non Health,48610,0.01
+Roofers,,56.33,129690,Non Health,45820,0.12
+Rehabilitation Counselors,,56.33,109040,Non Health,40160,0.1
+"Secretaries and Administrative Assistants, Except Legal, Medical, and Executive",,56.33,2038340,Non Health,39180,1.85
+Adhesive Bonding Machine Operators and Tenders,,56.33,13890,Non Health,36010,0.01
+Tire Repairers and Changers,,56.33,110880,Non Health,30350,0.1
+Nuclear Power Reactor Operators,,56,5050,Non Health,100990,0
+Forest and Conservation Technicians,,56,19060,Non Health,45860,0.02
+Concierges,,56,41670,Non Health,34290,0.04
+Butchers and Meat Cutters,,56,136770,Non Health,34010,0.12
+Instructional Coordinators,,55.67,176690,Non Health,69180,0.16
+Fence Erectors,,55.67,25900,Non Health,38600,0.02
+Helpers--Extraction Workers,,55.67,16700,Non Health,38390,0.02
+"Helpers--Installation, Maintenance, and Repair Workers",,55.67,99460,Non Health,32570,0.09
+Medical and Health Services Managers,,55.33,394910,Health,115160,0.36
+Food Scientists and Technologists,,55.33,13460,Non Health,76190,0.01
+Railroad Conductors and Yardmasters,,55.33,45710,Non Health,68350,0.04
+"Maintenance Workers, Machinery",,55.33,72890,Non Health,49450,0.07
+Parts Salespersons,,55.33,256170,Non Health,35220,0.23
+"Cooks, Short Order",,55.33,152670,Non Health,26240,0.14
+"Hotel, Motel, and Resort Desk Clerks",,55.33,267940,Non Health,25950,0.24
+Electrical Power-Line Installers and Repairers,,55,111660,Non Health,71960,0.1
+First-Line Supervisors of Construction Trades and Extraction Workers,,55,626180,Non Health,71440,0.57
+Brokerage Clerks,,55,47990,Non Health,55190,0.04
+Cement Masons and Concrete Finishers,,55,196120,Non Health,48330,0.18
+Cargo and Freight Agents,,55,95810,Non Health,46770,0.09
+Mechanical Door Repairers,,55,23050,Non Health,43740,0.02
+Motorboat Mechanics and Service Technicians,,55,22940,Non Health,43440,0.02
+"Human Resources Assistants, Except Payroll and Timekeeping",,55,117340,Non Health,42620,0.11
+"Mail Clerks and Mail Machine Operators, Except Postal Service",,55,83580,Non Health,32620,0.08
+"Janitors and Cleaners, Except Maids and Housekeeping Cleaners",,55,2145450,Non Health,30010,1.95
+General and Operations Managers,,54.67,2400280,Non Health,123030,2.18
+"Architecture Teachers, Postsecondary",,54.67,6780,Non Health,98980,0.01
+"Criminal Justice and Law Enforcement Teachers, Postsecondary",,54.67,14070,Non Health,72980,0.01
+Insurance Sales Agents,,54.67,410050,Non Health,67780,0.37
+"Dispatchers, Except Police, Fire, and Ambulance",,54.67,199360,Non Health,44100,0.18
+"Coating, Painting, and Spraying Machine Setters, Operators, and Tenders",,54.67,146350,Non Health,41260,0.13
+Slaughterers and Meat Packers,,54.67,73390,Non Health,29600,0.07
+Laundry and Dry-Cleaning Workers,,54.67,209330,Non Health,25420,0.19
+Occupational Health and Safety Specialists,,54.33,92780,Health,76290,0.08
+Boilermakers,,54.33,15820,Non Health,65040,0.01
+Locksmiths and Safe Repairers,,54.33,17010,Non Health,44460,0.02
+Demonstrators and Product Promoters,,54.33,77760,Non Health,35320,0.07
+"Biological Science Teachers, Postsecondary",,54,53090,Non Health,98700,0.05
+Signal and Track Switch Repairers,,54,6860,Non Health,72690,0.01
+Animal Scientists,,54,2690,Non Health,68570,0
+Fiberglass Laminators and Fabricators,,54,20010,Non Health,36970,0.02
+Helpers--Electricians,,54,79260,Non Health,34300,0.07
+Chemists,,53.67,83530,Non Health,84150,0.08
+Computer Network Support Specialists,,53.67,185430,Non Health,68860,0.17
+Loan Interviewers and Clerks,,53.67,208530,Non Health,41960,0.19
+Word Processors and Typists,,53.67,47460,Non Health,41880,0.04
+"Umpires, Referees, and Other Sports Officials",,53.67,20120,Non Health,38810,0.02
+Animal Trainers,,53.67,16530,Non Health,36240,0.02
+"Petroleum Pump System Operators, Refinery Operators, and Gaugers",,53.33,40370,Non Health,73830,0.04
+Social and Community Service Managers,,53.33,156460,Non Health,72900,0.14
+Brickmasons and Blockmasons,,53.33,60650,Non Health,56470,0.06
+Sheet Metal Workers,,53,131300,Non Health,54480,0.12
+Medical Equipment Repairers,,53,46370,Health,53130,0.04
+"First-Line Supervisors of Landscaping, Lawn Service, and Groundskeeping Workers",,53,103580,Non Health,52340,0.09
+Hazardous Materials Removal Workers,,53,44240,Non Health,47740,0.04
+"Electric Motor, Power Tool, and Related Repairers",,53,15890,Non Health,46620,0.01
+Customer Service Representatives,,53,2919230,Non Health,37320,2.65
+"Extruding, Forming, Pressing, and Compacting Machine Setters, Operators, and Tenders",,53,71850,Non Health,37240,0.07
+"Medical Scientists, Except Epidemiologists",,52.67,127180,Health,98770,0.12
+Emergency Management Directors,,52.67,10060,Non Health,82530,0.01
+Sound Engineering Technicians,,52.67,12890,Non Health,67090,0.01
+Procurement Clerks,,52.67,66030,Non Health,43980,0.06
+Pest Control Workers,,52.67,79450,Non Health,39910,0.07
+Merchandise Displayers and Window Trimmers,,52.67,140850,Non Health,32940,0.13
+"Cooks, Restaurant",,52.67,1401890,Non Health,28700,1.27
+Dishwashers,,52.67,514330,Non Health,24410,0.47
+First-Line Supervisors of Production and Operating Workers,,52.33,631100,Non Health,65220,0.57
+"Tax Examiners and Collectors, and Revenue Agents",,52.33,53760,Non Health,60960,0.05
+"Tailors, Dressmakers, and Custom Sewers",,52.33,24110,Non Health,34530,0.02
+Chief Executives,,52,205890,Non Health,193850,0.19
+"Mathematical Science Teachers, Postsecondary",,52,51150,Non Health,86330,0.05
+Chemical Plant and System Operators,,52,28840,Non Health,62710,0.03
+"Environmental Science and Protection Technicians, Including Health",,52,32620,Non Health,50760,0.03
+"Directors, Religious Activities and Education",,52,21820,Non Health,50490,0.02
+Carpet Installers,,52,26010,Non Health,45320,0.02
+Recreational Vehicle Service Technicians,,52,15580,Non Health,41660,0.01
+"Meat, Poultry, and Fish Cutters and Trimmers",,52,153990,Non Health,28810,0.14
+"Graders and Sorters, Agricultural Products",,52,34340,Non Health,27570,0.03
+Food Preparation Workers,,52,863740,Non Health,25820,0.78
+Power Distributors and Dispatchers,,51.67,10770,Non Health,88910,0.01
+Logisticians,,51.67,182050,Non Health,78680,0.17
+"Electrical and Electronics Repairers, Commercial and Industrial Equipment",,51.67,58930,Non Health,60360,0.05
+Water and Wastewater Treatment Plant and System Operators,,51.67,123730,Non Health,50490,0.11
+Order Clerks,,51.67,137180,Non Health,36600,0.12
+Farm Labor Contractors,,51.33,160,Non Health,62060,0
+"Inspectors, Testers, Sorters, Samplers, and Weighers",,51.33,576950,Non Health,43000,0.52
+Library Technicians,,51.33,88720,Non Health,36950,0.08
+"Packers and Packagers, Hand",,51.33,633640,Non Health,27680,0.58
+"Anthropology and Archeology Teachers, Postsecondary",,51,5850,Non Health,95140,0.01
+Locomotive Engineers,,51,35520,Non Health,71570,0.03
+Advertising Sales Agents,,51,129740,Non Health,64660,0.12
+"Model Makers, Metal and Plastic",,51,4300,Non Health,57420,0
+Bus and Truck Mechanics and Diesel Engine Specialists,,51,266330,Non Health,50360,0.24
+File Clerks,,51,102300,Non Health,34610,0.09
+Industrial Production Managers,,50.67,185790,Non Health,115110,0.17
+Real Estate Brokers,,50.67,42730,Non Health,81450,0.04
+"Insurance Appraisers, Auto Damage",,50.67,13750,Non Health,66240,0.01
+Construction and Building Inspectors,,50.67,110420,Non Health,64390,0.1
+Credit Counselors,,50.67,32110,Non Health,50230,0.03
+"Patternmakers, Metal and Plastic",,50.67,3010,Non Health,48050,0
+"Tank Car, Truck, and Ship Loaders",,50.67,11620,Non Health,47580,0.01
+"Painters, Construction and Maintenance",,50.67,232760,Non Health,44640,0.21
+Farm Equipment Mechanics and Service Technicians,,50.67,36290,Non Health,43630,0.03
+Ophthalmic Laboratory Technicians,,50.67,29150,Health,34800,0.03
+Automotive and Watercraft Service Attendants,,50.67,117670,Non Health,26860,0.11
+Mechanical Engineers,,50.33,306990,Non Health,93540,0.28
+"Environmental Science Teachers, Postsecondary",,50.33,6060,Non Health,93450,0.01
+"Communications Teachers, Postsecondary",,50.33,29120,Non Health,79830,0.03
+Continuous Mining Machine Operators,,50.33,14630,Non Health,56530,0.01
+"Pump Operators, Except Wellhead Pumpers",,50.33,10000,Non Health,49120,0.01
+Bill and Account Collectors,,50.33,235870,Non Health,39300,0.21
+"Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",,50,1344530,Non Health,71110,1.22
+Training and Development Specialists,,50,312450,Non Health,65640,0.28
+Lodging Managers,,50,38340,Non Health,63570,0.03
+Photographers,,50,50620,Non Health,45440,0.05
+Refuse and Recyclable Material Collectors,,50,121330,Non Health,41400,0.11
+"Paper Goods Machine Setters, Operators, and Tenders",,50,100290,Non Health,40980,0.09
+"Helpers--Painters, Paperhangers, Plasterers, and Stucco Masons",,50,10850,Non Health,32930,0.01
+Bicycle Repairers,,50,13190,Non Health,31360,0.01
+First-Line Supervisors of Office and Administrative Support Workers,,49.67,1487870,Non Health,60130,1.35
+"Forging Machine Setters, Operators, and Tenders, Metal and Plastic",,49.67,16320,Non Health,41200,0.01
+Data Entry Keyers,,49.67,159930,Non Health,34820,0.15
+Public Relations and Fundraising Managers,,49.33,79160,Non Health,132630,0.07
+"Computer Science Teachers, Postsecondary",,49.33,31800,Non Health,98430,0.03
+Athletes and Sports Competitors,,49.33,11330,Non Health,93140,0.01
+"Production, Planning, and Expediting Clerks",,49.33,370380,Non Health,50640,0.34
+Engine and Other Machine Assemblers,,49.33,45980,Non Health,46570,0.04
+Packaging and Filling Machine Operators and Tenders,,49.33,390540,Non Health,33590,0.35
+"Laborers and Freight, Stock, and Material Movers, Hand",,49.33,2953170,Non Health,32130,2.68
+Bakers,,49.33,184990,Non Health,29630,0.17
+Sales Managers,,49,402600,Non Health,141690,0.37
+"Education Administrators, Postsecondary",,49,144880,Non Health,112400,0.13
+"Arbitrators, Mediators, and Conciliators",,49,6090,Non Health,73720,0.01
+Gas Compressor and Gas Pumping Station Operators,,49,3440,Non Health,62710,0
+Interior Designers,,49,60650,Non Health,60990,0.06
+"Model Makers, Wood",,49,810,Non Health,57320,0
+"Rail Yard Engineers, Dinkey Operators, and Hostlers",,49,5400,Non Health,52690,0
+Art Directors,,48.67,42890,Non Health,109600,0.04
+Construction Managers,,48.67,293380,Non Health,105000,0.27
+Avionics Technicians,,48.67,21750,Non Health,66970,0.02
+Proofreaders and Copy Markers,,48.67,7730,Non Health,43200,0.01
+Structural Metal Fabricators and Fitters,,48.67,76890,Non Health,43000,0.07
+"Computer, Automated Teller, and Office Machine Repairers",,48.67,98260,Non Health,42070,0.09
+Foundry Mold and Coremakers,,48.67,17590,Non Health,36920,0.02
+"Economics Teachers, Postsecondary",,48.33,13270,Non Health,119160,0.01
+"English Language and Literature Teachers, Postsecondary",,48.33,67930,Non Health,80180,0.06
+Power Plant Operators,,48.33,33620,Non Health,79370,0.03
+Gas Plant Operators,,48.33,14410,Non Health,71050,0.01
+"Mobile Heavy Equipment Mechanics, Except Engines",,48.33,147800,Non Health,54840,0.13
+Chemical Equipment Operators and Tenders,,48.33,87120,Non Health,51540,0.08
+Plasterers and Stucco Masons,,48.33,27360,Non Health,49710,0.02
+"Weighers, Measurers, Checkers, and Samplers, Recordkeeping",,48.33,60920,Non Health,36650,0.06
+Training and Development Managers,,48,38510,Non Health,123470,0.03
+Environmental Engineers,,48,53150,Non Health,94220,0.05
+Network and Computer Systems Administrators,,48,354450,Non Health,88410,0.32
+Solar Photovoltaic Installers,,48,11080,Non Health,46850,0.01
+"Rolling Machine Setters, Operators, and Tenders, Metal and Plastic",,48,32470,Non Health,41920,0.03
+"Extruding and Forming Machine Setters, Operators, and Tenders, Synthetic and Glass Fibers",,48,18230,Non Health,37760,0.02
+Models,,48,2320,Non Health,36430,0
+"Molding, Coremaking, and Casting Machine Setters, Operators, and Tenders, Metal and Plastic",,48,172520,Non Health,34670,0.16
+Shoe and Leather Workers and Repairers,,48,8760,Non Health,30580,0.01
+First-Line Supervisors of Non-Retail Sales Workers,,47.67,249090,Non Health,86180,0.23
+Urban and Regional Planners,,47.67,38560,Non Health,77750,0.04
+Editors,,47.67,95970,Non Health,71910,0.09
+Rail Car Repairers,,47.67,25930,Non Health,56810,0.02
+"Aircraft Structure, Surfaces, Rigging, and Systems Assemblers",,47.67,42940,Non Health,56460,0.04
+Chemical Technicians,,47.67,65760,Non Health,52910,0.06
+"Coin, Vending, and Amusement Machine Servicers and Repairers",,47.67,31370,Non Health,37380,0.03
+Manufactured Building and Mobile Home Installers,,47.67,2810,Non Health,34300,0
+"Agents and Business Managers of Artists, Performers, and Athletes",,47.33,17060,Non Health,97170,0.02
+"Area, Ethnic, and Cultural Studies Teachers, Postsecondary",,47.33,10600,Non Health,88410,0.01
+Fashion Designers,,47.33,22030,Non Health,86110,0.02
+Labor Relations Specialists,,47.33,75580,Non Health,71870,0.07
+Historians,,47.33,3040,Non Health,68690,0
+Private Detectives and Investigators,,47.33,35000,Non Health,57000,0.03
+Outdoor Power Equipment and Other Small Engine Mechanics,,47.33,32160,Non Health,37670,0.03
+"Sales Representatives, Wholesale and Manufacturing, Technical and Scientific Products",,47,306980,Non Health,92980,0.28
+Industrial Engineers,,47,291710,Non Health,92660,0.26
+Financial Examiners,,47,64550,Non Health,92330,0.06
+Insurance Underwriters,,47,100050,Non Health,77640,0.09
+"Property, Real Estate, and Community Association Managers",,47,220750,Non Health,71720,0.2
+Travel Agents,,47,66670,Non Health,44690,0.06
+Tree Trimmers and Pruners,,47,47210,Non Health,42510,0.04
+"Furnace, Kiln, Oven, Drier, and Kettle Operators and Tenders",,47,18970,Non Health,41350,0.02
+Lawyers,,46.67,657170,Non Health,145300,0.6
+Loan Officers,,46.67,308370,Non Health,76200,0.28
+Public Relations Specialists,,46.67,244730,Non Health,70190,0.22
+Human Resources Specialists,,46.67,633040,Non Health,67760,0.57
+Executive Secretaries and Executive Administrative Assistants,,46.67,542690,Non Health,62920,0.49
+"Helpers--Brickmasons, Blockmasons, Stonemasons, and Tile and Marble Setters",,46.67,23480,Non Health,38440,0.02
+Landscaping and Groundskeeping Workers,,46.67,912660,Non Health,32360,0.83
+Marketing Managers,,46.33,263680,Non Health,149200,0.24
+Advertising and Promotions Managers,,46.33,25100,Non Health,141890,0.02
+"Architects, Except Landscape and Naval",,46.33,105850,Non Health,89560,0.1
+"Foreign Language and Literature Teachers, Postsecondary",,46.33,24860,Non Health,80170,0.02
+"Education Teachers, Postsecondary",,46.33,61300,Non Health,74560,0.06
+Zoologists and Wildlife Biologists,,46.33,19250,Non Health,67200,0.02
+Set and Exhibit Designers,,46.33,12040,Non Health,62480,0.01
+Crane and Tower Operators,,46.33,45480,Non Health,60530,0.04
+Tax Preparers,,46.33,66670,Non Health,49550,0.06
+"Layout Workers, Metal and Plastic",,46.33,8150,Non Health,48900,0.01
+"Heat Treating Equipment Setters, Operators, and Tenders, Metal and Plastic",,46.33,19560,Non Health,39840,0.02
+Correspondence Clerks,,46.33,6250,Non Health,39570,0.01
+"Multiple Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,46.33,146950,Non Health,38410,0.13
+Automotive Glass Installers and Repairers,,46.33,19410,Non Health,37440,0.02
+"Psychology Teachers, Postsecondary",,46,37480,Non Health,87530,0.03
+"Geography Teachers, Postsecondary",,46,3970,Non Health,86540,0
+Credit Analysts,,46,73930,Non Health,84930,0.07
+Terrazzo Workers and Finishers,,46,2970,Non Health,56340,0
+Fabric and Apparel Patternmakers,,46,5870,Non Health,52740,0.01
+"Postal Service Mail Sorters, Processors, and Processing Machine Operators",,46,102390,Non Health,51190,0.09
+Human Resources Managers,,45.67,154800,Non Health,129570,0.14
+Budget Analysts,,45.67,51460,Non Health,80300,0.05
+Epidemiologists,,45.67,7410,Health,78290,0.01
+"Office Machine Operators, Except Computer",,45.67,45960,Non Health,35150,0.04
+"Sawing Machine Setters, Operators, and Tenders, Wood",,45.67,50730,Non Health,32150,0.05
+Information Security Analysts,,45.33,125570,Non Health,104210,0.11
+"Physics Teachers, Postsecondary",,45.33,13780,Non Health,101110,0.01
+"Sociology Teachers, Postsecondary",,45.33,13850,Non Health,85240,0.01
+Operating Engineers and Other Construction Equipment Operators,,45.33,405750,Non Health,54210,0.37
+Food Batchmakers,,45.33,159390,Non Health,33120,0.14
+"Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders",,45.33,31190,Non Health,30740,0.03
+"Law Teachers, Postsecondary",,45,16180,Non Health,129950,0.01
+Surveyors,,45,45220,Non Health,67920,0.04
+Fundraisers,,45,81660,Non Health,62830,0.07
+Hoist and Winch Operators,,45,4800,Non Health,62690,0
+Postal Service Mail Carriers,,45,339650,Non Health,52180,0.31
+"Bookkeeping, Accounting, and Auditing Clerks",,45,1512660,Non Health,42960,1.37
+Commercial and Industrial Designers,,44.67,32770,Non Health,73820,0.03
+Cartographers and Photogrammetrists,,44.67,11300,Non Health,69790,0.01
+"Electrical and Electronics Installers and Repairers, Transportation Equipment",,44.67,9790,Non Health,63670,0.01
+Drywall and Ceiling Tile Installers,,44.67,102850,Non Health,50560,0.09
+Broadcast Technicians,,44.67,28650,Non Health,46800,0.03
+Prepress Technicians and Workers,,44.67,30270,Non Health,42540,0.03
+Biochemists and Biophysicists,,44.33,31360,Non Health,108180,0.03
+Computer Systems Analysts,,44.33,589060,Non Health,96160,0.53
+"Agricultural Sciences Teachers, Postsecondary",,44.33,9470,Non Health,89320,0.01
+"Meter Readers, Utilities",,44.33,30450,Non Health,46250,0.03
+"Cooks, Fast Food",,44.33,527220,Non Health,23530,0.48
+Computer and Information Systems Managers,,44,433960,Non Health,156390,0.39
+"Philosophy and Religion Teachers, Postsecondary",,44,23490,Non Health,88970,0.02
+Film and Video Editors,,44,27570,Non Health,87300,0.03
+Curators,,44,12890,Non Health,59130,0.01
+"Paving, Surfacing, and Tamping Equipment Operators",,44,45770,Non Health,44630,0.04
+"Cutting and Slicing Machine Setters, Operators, and Tenders",,44,57960,Non Health,36750,0.05
+Purchasing Managers,,43.67,72100,Non Health,128400,0.07
+Aerospace Engineers,,43.67,63200,Non Health,119220,0.06
+"Mixing and Blending Machine Setters, Operators, and Tenders",,43.67,125340,Non Health,39920,0.11
+Cabinetmakers and Bench Carpenters,,43.67,99400,Non Health,37620,0.09
+Chemical Engineers,,43.33,30120,Non Health,117090,0.03
+"Electronics Engineers, Except Computer",,43.33,128800,Non Health,110210,0.12
+"Library Science Teachers, Postsecondary",,43.33,4390,Non Health,77170,0
+Machinists,,43.33,383470,Non Health,46120,0.35
+Musical Instrument Repairers and Tuners,,43.33,8020,Non Health,39750,0.01
+Upholsterers,,43.33,29420,Non Health,36640,0.03
+Helpers--Roofers,,43.33,8960,Non Health,33350,0.01
+Cleaners of Vehicles and Equipment,,43.33,382670,Non Health,27940,0.35
+Physicists,,43,16730,Non Health,131080,0.02
+"Business Teachers, Postsecondary",,43,83920,Non Health,105440,0.08
+"Mining and Geological Engineers, Including Mining Safety Engineers",,43,6280,Non Health,96990,0.01
+"Social Work Teachers, Postsecondary",,43,13640,Non Health,77910,0.01
+Landscape Architects,,43,20280,Non Health,73970,0.02
+Paralegals and Legal Assistants,,43,329870,Non Health,55020,0.3
+Medical Transcriptionists,,43,55780,Health,35210,0.05
+"Grinding and Polishing Workers, Hand",,43,29170,Non Health,33060,0.03
+Statistical Assistants,,42.67,9810,Non Health,51640,0.01
+Desktop Publishers,,42.67,8740,Non Health,48740,0.01
+"Insulation Workers, Floor, Ceiling, and Wall",,42.67,33550,Non Health,45100,0.03
+"Electronic Equipment Installers and Repairers, Motor Vehicles",,42.67,10310,Non Health,38910,0.01
+"Painting, Coating, and Decorating Workers",,42.67,12430,Non Health,35600,0.01
+Sales Engineers,,42.33,63550,Non Health,112780,0.06
+Electrical Engineers,,42.33,185570,Non Health,103480,0.17
+"Political Science Teachers, Postsecondary",,42.33,15750,Non Health,102290,0.01
+"Chemistry Teachers, Postsecondary",,42.33,21380,Non Health,92650,0.02
+"Environmental Scientists and Specialists, Including Health",,42.33,84290,Non Health,77940,0.08
+Cost Estimators,,42.33,210000,Non Health,71350,0.19
+Architectural and Engineering Managers,,42,194250,Non Health,152930,0.18
+Agricultural Engineers,,42,1550,Non Health,98290,0
+Civil Engineers,,42,310850,Non Health,94360,0.28
+Payroll and Timekeeping Clerks,,42,142700,Non Health,47390,0.13
+Tire Builders,,42,20790,Non Health,45010,0.02
+Paperhangers,,42,3380,Non Health,44470,0
+"Coil Winders, Tapers, and Finishers",,42,12690,Non Health,38760,0.01
+Helpers--Production Workers,,42,303030,Non Health,30540,0.28
+Sewing Machine Operators,,42,133410,Non Health,28000,0.12
+Management Analysts,,41.67,709750,Non Health,95560,0.64
+Geographers,,41.67,1400,Non Health,81970,0
+Timing Device Assemblers and Adjusters,,41.67,1260,Non Health,38110,0
+Compensation and Benefits Managers,,41.33,16900,Non Health,134210,0.02
+Personal Financial Advisors,,41.33,210190,Non Health,119290,0.19
+Museum Technicians and Conservators,,41.33,13190,Non Health,48030,0.01
+"Extruding and Drawing Machine Setters, Operators, and Tenders, Metal and Plastic",,41.33,76940,Non Health,37770,0.07
+Textile Bleaching and Dyeing Machine Operators and Tenders,,41.33,8690,Non Health,30810,0.01
+Natural Sciences Managers,,41,67720,Non Health,145450,0.06
+"Engineering Teachers, Postsecondary",,41,36080,Non Health,112110,0.03
+Industrial-Organizational Psychologists,,41,630,Non Health,111150,0
+"Compensation, Benefits, and Job Analysis Specialists",,41,89300,Non Health,69840,0.08
+Tapers,,41,17970,Non Health,61550,0.02
+Nuclear Engineers,,40.67,15850,Non Health,120700,0.01
+"Forestry and Conservation Science Teachers, Postsecondary",,40.67,1770,Non Health,90940,0
+"Patternmakers, Wood",,40.67,370,Non Health,63490,0
+Heavy and Tractor-Trailer Truck Drivers,,40.67,1856130,Non Health,46850,1.69
+"Grinding, Lapping, Polishing, and Buffing Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,40.67,76810,Non Health,37860,0.07
+"History Teachers, Postsecondary",,40.33,21030,Non Health,84210,0.02
+Floor Sanders and Finishers,,40.33,4940,Non Health,42300,0
+Motorcycle Mechanics,,40.33,15590,Non Health,39970,0.01
+Machine Feeders and Offbearers,,40.33,63280,Non Health,33010,0.06
+Technical Writers,,40,50760,Non Health,76860,0.05
+Archivists,,40,6560,Non Health,57500,0.01
+Parking Enforcement Workers,,40,7650,Non Health,43420,0.01
+Printing Press Operators,,40,173430,Non Health,39100,0.16
+Cooling and Freezing Equipment Operators and Tenders,,40,8740,Non Health,37010,0.01
+Computer and Information Research Scientists,,39.67,30780,Non Health,127460,0.03
+Materials Scientists,,39.67,6710,Non Health,100430,0.01
+Aircraft Mechanics and Service Technicians,,39.67,133310,Non Health,67110,0.12
+Traffic Technicians,,39.67,7470,Non Health,52590,0.01
+Log Graders and Scalers,,39.67,3300,Non Health,39110,0
+Industrial Truck and Tractor Operators,,39.67,629270,Non Health,37930,0.57
+Print Binding and Finishing Workers,,39.67,45600,Non Health,35130,0.04
+Petroleum Engineers,,39.33,32620,Non Health,156780,0.03
+Materials Engineers,,39.33,26820,Non Health,97890,0.02
+Computer Programmers,,39.33,199540,Non Health,92610,0.18
+Sociologists,,39.33,2630,Non Health,90590,0
+Hydrologists,,39.33,6440,Non Health,86330,0.01
+Mechanical Drafters,,39.33,55210,Non Health,60500,0.05
+Tool and Die Makers,,39.33,70770,Non Health,54980,0.06
+Animal Breeders,,39.33,1610,Non Health,46420,0
+"Woodworking Machine Setters, Operators, and Tenders, Except Sawing",,39.33,78850,Non Health,32180,0.07
+Market Research Analysts and Marketing Specialists,,39,678500,Non Health,71570,0.62
+Survey Researchers,,39,9930,Non Health,65760,0.01
+Foresters,,39,9510,Non Health,63270,0.01
+"Title Examiners, Abstractors, and Searchers",,39,52890,Non Health,52050,0.05
+"Milling and Planing Machine Setters, Operators, and Tenders, Metal and Plastic",,39,18730,Non Health,44820,0.02
+"Drilling and Boring Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,39,10870,Non Health,42630,0.01
+Atmospheric and Space Scientists,,38.67,9290,Non Health,97160,0.01
+"Food and Tobacco Roasting, Baking, and Drying Machine Operators and Tenders",,38.33,20830,Non Health,33880,0.02
+"Geoscientists, Except Hydrologists and Geographers",,38,29200,Non Health,108350,0.03
+Soil and Plant Scientists,,38,14150,Non Health,69860,0.01
+Social Science Research Assistants,,38,35580,Non Health,51340,0.03
+"Crushing, Grinding, and Polishing Machine Setters, Operators, and Tenders",,38,33360,Non Health,39270,0.03
+Furniture Finishers,,38,16220,Non Health,34350,0.01
+"Tool Grinders, Filers, and Sharpeners",,37.67,6440,Non Health,41970,0.01
+"Textile Cutting Machine Setters, Operators, and Tenders",,37.67,13210,Non Health,29660,0.01
+"Cleaning, Washing, and Metal Pickling Equipment Operators and Tenders",,37.33,16410,Non Health,34230,0.01
+Shoe Machine Operators and Tenders,,37.33,5020,Non Health,30540,0
+Political Scientists,,37,6010,Non Health,120260,0.01
+Operations Research Analysts,,37,99680,Non Health,90600,0.09
+"Pourers and Casters, Metal",,37,8010,Non Health,40850,0.01
+"Cutting, Punching, and Press Machine Setters, Operators, and Tenders, Metal and Plastic",,37,195040,Non Health,37310,0.18
+Graphic Designers,,36.67,215930,Non Health,56510,0.2
+Dredge Operators,,36.67,1550,Non Health,51340,0
+Automotive Body and Related Repairers,,36.67,144180,Non Health,47390,0.13
+"Lathe and Turning Machine Tool Setters, Operators, and Tenders, Metal and Plastic",,36.67,28070,Non Health,41990,0.03
+Agricultural Equipment Operators,,36.67,26990,Non Health,33300,0.02
+Statisticians,,36.33,39090,Non Health,95680,0.04
+Bridge and Lock Tenders,,36,3150,Non Health,47880,0
+"Separating, Filtering, Clarifying, Precipitating, and Still Machine Setters, Operators, and Tenders",,36,51160,Non Health,45370,0.05
+Computer Network Architects,,35.67,152420,Non Health,115110,0.14
+Metal-Refining Furnace Operators and Tenders,,35.67,17150,Non Health,43280,0.02
+Etchers and Engravers,,35.33,10310,Non Health,33770,0.01
+Motion Picture Projectionists,,35.33,4540,Non Health,29890,0
+Computer Hardware Engineers,,35,67880,Non Health,123030,0.06
+"Pesticide Handlers, Sprayers, and Applicators, Vegetation",,34.67,25780,Non Health,39230,0.02
+Wellhead Pumpers,,34.33,12970,Non Health,55080,0.01
+Conveyor Operators and Tenders,,34.33,24050,Non Health,36150,0.02
+Actuaries,,33.67,22260,Non Health,120970,0.02
+Judicial Law Clerks,,33.67,16630,Non Health,59890,0.02
+"Textile Knitting and Weaving Machine Setters, Operators, and Tenders",,33.67,21130,Non Health,31300,0.02
+Mathematicians,,33.33,2630,Non Health,107280,0
+"Pressers, Textile, Garment, and Related Materials",,33.33,38070,Non Health,24820,0.03
+Camera and Photographic Equipment Repairers,,33,3620,Non Health,40720,0
+Economists,,32.67,19000,Non Health,116630,0.02
+"Rock Splitters, Quarry",,32.67,5080,Non Health,37390,0
+"Welding, Soldering, and Brazing Machine Setters, Operators, and Tenders",,31.67,35110,Non Health,40240,0.03
+"Cutters and Trimmers, Hand",,31.67,9670,Non Health,32340,0.01
+Astronomers,,31,2070,Non Health,122270,0
+Logging Equipment Operators,,30.67,26030,Non Health,42060,0.02
+"Cooks, Private Household",,30.33,390,Non Health,45600,0
+Craft Artists,,29.67,4640,Non Health,38740,0
+"Sewers, Hand",,29.67,4770,Non Health,31020,0
+"Fine Artists, Including Painters, Sculptors, and Illustrators",,20,12350,Non Health,63030,0.01
+Fallers,,18,4890,Non Health,49670,0
