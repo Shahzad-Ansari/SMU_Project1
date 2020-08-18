@@ -1,0 +1,240 @@
+########################### Matt's Code ###############################
+
+file_to_load = "mattcovid19.csv"
+
+covid_data = pd.read_csv(file_to_load)
+
+
+#Turn CSV to data frme#
+df = covid_data
+
+#Over View Race and Ethnicity and sex
+
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_RE = covid_data.groupby(['Race and ethnicity (combined)', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data
+
+#Turn CSV to data frme#
+long_df = covid_data_RE
+
+fig = px.bar(long_df, x="Race and ethnicity (combined)", y="current_status_count", color="sex",)
+
+fig.update_layout(
+    title="Overview R&E Sex ",
+    xaxis_title="R&E",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+fig.show()
+	 
+#Overview Age Group
+
+covid_data = pd.read_csv(file_to_load)
+
+
+covid_data_age = covid_data.groupby(['Race and ethnicity (combined)', 'sex', 'age_group']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_age
+
+long_df = covid_data_age
+
+fig = px.bar(long_df, x="age_group", y="current_status_count", color="sex",)
+
+fig.update_layout(
+    title="Overview R&E Sex",
+    xaxis_title="Age Group",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+fig.show()
+
+#Overview Male and Female
+covid_data = pd.read_csv(file_to_load)
+
+
+covid_data_MF = covid_data.groupby(['Race and ethnicity (combined)', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_MF
+
+long_df = covid_data_MF
+
+fig = px.histogram(long_df, x="sex", y="current_status_count" , color="sex")
+
+fig.update_layout(
+    title="Overview Sex",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+        
+fig.show()
+	
+#Filtered for Race AIAN
+
+covid_data = pd.read_csv(file_to_load)
+
+
+covid_data_AIAN = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['AIAN'])]
+covid_data_AIAN = covid_data_AIAN.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_AIAN
+
+long_df= covid_data_AIAN
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race AIAN",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+fig.show()
+
+#Age Group Race Asian
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_ASIAN = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['Asian'])]
+covid_data_ASIAN = covid_data_ASIAN.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_ASIAN
+
+long_df= covid_data_ASIAN
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race Asian",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+
+fig.show()
+
+#Filtered For Race Black
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_Black = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['Black'])]
+covid_data_Black = covid_data_Black.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_Black
+
+long_df= covid_data_Black
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race Black",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+        
+fig.show()
+
+#Filtered for Hispanic/Latino
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_Hispanic = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['Hispanic/Latino'])]
+covid_data_Hispanic = covid_data_Hispanic.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_Hispanic
+
+long_df= covid_data_Hispanic
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race Hispanic/Latino",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+        
+fig.show()
+
+#Filtered for Multiple/Other
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_Multiple = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['Multiple/Other'])]
+covid_data_Multiple = covid_data_Multiple.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_Multiple
+
+long_df= covid_data_Multiple
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race Multiple/Other",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+        
+fig.show()
+
+#Filtered for NHPI
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_NHPI = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['NHPI'])]
+covid_data_NHPI = covid_data_NHPI.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_NHPI
+
+long_df= covid_data_NHPI
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race NHPI",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+fig.show()
+
+#Filter for White
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_White = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['White'])]
+covid_data_White = covid_data_White.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_White
+
+long_df= covid_data_White
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race White",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+fig.show()
+
+#Filter for unknown
+
+covid_data = pd.read_csv(file_to_load)
+
+covid_data_Unknown = covid_data.loc[covid_data['Race and ethnicity (combined)'].isin(['Unknown'])]
+covid_data_Unknown = covid_data_Unknown.groupby(['age_group', 'sex']).agg(current_status_count=('current_status', 'count')).reset_index()
+covid_data_Unknown
+
+long_df= covid_data_Unknown
+
+fig = px.bar(long_df, x="sex", y="current_status_count",
+             color='age_group', barmode='group',
+             height=400)
+
+fig.update_layout(
+    title="Overview Sex and Race Unknown",
+    xaxis_title="Sex",
+    yaxis_title="Number Of Cases",
+    legend_title="Sex")
+
+fig.show()
